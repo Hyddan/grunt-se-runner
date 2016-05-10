@@ -1,0 +1,34 @@
+{
+  "name": "grunt-se-runner",
+  "version": "1.0.0",
+  "description": "Grunt task for se-runner",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hyddan/grunt-se-runner.git"
+  },
+  "keywords": [
+    "Grunt",
+    "Plugin",
+    "Selenium",
+    "Test",
+    "Runner"
+  ],
+  "author": "Daniel Hedenius",
+  "license": "WTFPL-2.0",
+  "bugs": {
+    "url": "https://github.com/Hyddan/grunt-se-runner/issues"
+  },
+  "homepage": "https://github.com/Hyddan/grunt-se-runner#readme",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "dependencies": {
+    "se-runner": "^1.0.0"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "^1.0.0"
+  },
+  "peerDependencies": {
+    "grunt": "~0.4.2"
+  }
+}
