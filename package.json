@@ -1,6 +1,6 @@
 {
   "name": "grunt-se-runner",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Grunt task for se-runner",
   "repository": {
     "type": "git",
@@ -29,6 +29,6 @@
     "grunt-contrib-jshint": "^1.0.0"
   },
   "peerDependencies": {
-    "grunt": "~0.4.2"
+    "grunt": ">=0.4.0"
   }
 }
