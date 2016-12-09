@@ -24,12 +24,13 @@ module.exports = function (grunt) {
                 options: {
                     capabilities: [
                         {
-                            browserName: 'firefox'
+                            browserName: 'chrome'
                         },
                         {
-                            browserName: 'chrome'
+                            browserName: 'firefox'
                         }
                     ],
+                    concurrency: 1,
                     context: {},
                     dependencies: [],
                     driverFactory: {

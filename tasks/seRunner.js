@@ -13,6 +13,7 @@ module.exports = function (grunt) {
         var done = this.async();
         require('se-runner').create(this.options({
             capabilities: [],
+            concurrency: 1,
             context: {},
             dependencies: [],
             driverFactory: {

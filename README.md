@@ -15,6 +15,9 @@ Once the plugin has been installed, it may be enabled inside your Gruntfile with
 grunt.loadNpmTasks('grunt-se-runner');
 ```
 
+## NPM package
+* https://npmjs.com/package/grunt-se-runner
+
 ## SeRunner task
 _Run this task with the `grunt seRunner` command._
 
@@ -41,6 +44,12 @@ Type: `Array`
 Default value: `[]`
 
 A list of WebDriver capabilities to start on the Selenium hub.
+
+#### concurrency
+Type: `Number`
+Default value: `1`
+
+Number of concurrent processes that will be run.
 
 #### context
 Type: `Object`
@@ -97,6 +106,12 @@ Default value: `{}`
 
 Any values given here will be passed into the framework adaptor.
 
+#### [framework].consoleReporter
+Type: `Boolean`
+Default value: `true`
+
+Whether the framework adaptor should report to the console as things are happening or not.
+
 #### [framework].dependencies
 Type: `Array`
 Default value: `[]`
@@ -123,9 +138,9 @@ grunt.initConfig({
         driverFactory: {
             create: function (capabilities) {
                 return new (require('selenium-webdriver')).Builder()
-                    .usingServer(this.selenium.hub)
-                    .withCapabilities(capabilities)
-                    .build();
+                                .usingServer(this.selenium.hub)
+                                .withCapabilities(capabilities)
+                                .build();
             }
         },
         framework: 'jasmine',
@@ -136,6 +151,7 @@ grunt.initConfig({
             hub: 'http://hub.browserstack.com/wd/hub'
         },
         jasmine: {
+            consoleReporter: true,
             dependencies: [],
             timeout: 60000
         }
@@ -149,5 +165,6 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
 
+ * 2016-12-09   v1.1.0   Indicate grunt success/failure based on result from SeRunner.
  * 2016-06-13   v1.0.1   Fixed peerDependencies.
  * 2016-05-10   v1.0.0   Initial version.
