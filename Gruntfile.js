@@ -50,10 +50,11 @@ module.exports = function (grunt) {
                         hub: 'http://hub.browserstack.com/wd/hub'
                     },
                     jasmine: {
+                        consoleReporter: true,
                         dependencies: [],
                         timeout: 60000
                     }
-				}
+                }
             }
         }
     });
