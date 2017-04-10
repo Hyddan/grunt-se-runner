@@ -126,6 +126,9 @@ Overrides the default timeout for the framework adaptor only.
 
 ### Usage Examples
 
+#### SeRunner BrowserStack Example
+For a full, ready to run, example using [se-runner](https://github.com/Hyddan/se-runner#readme) with [grunt-se-runner](https://github.com/Hyddan/grunt-se-runner#readme) and [se-runner-framework-jasmine](https://github.com/Hyddan/se-runner-framework-jasmine#readme), see [se-runner-browserstack-example](https://github.com/Hyddan/se-runner-browserstack-example#readme).
+
 #### Options
 
 ```js
@@ -165,6 +168,7 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
 
+ * 2017-04-10   v1.1.2   Update SeRunner dependency to 1.2.2 and added link in README to se-runner-browserstack-example.
  * 2017-04-10   v1.1.1   Update SeRunner dependency to 1.2.1.
  * 2016-12-09   v1.1.0   Indicate grunt success/failure based on result from SeRunner.
  * 2016-06-13   v1.0.1   Fixed peerDependencies.

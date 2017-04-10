@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/Hyddan/grunt-se-runner#readme",
   "dependencies": {
-    "se-runner": "^1.2.1"
+    "se-runner": "^1.2.2"
   },
   "devDependencies": {
     "grunt-contrib-jshint": "^1.0.0"
