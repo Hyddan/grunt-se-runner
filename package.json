@@ -1,6 +1,6 @@
 {
   "name": "grunt-se-runner",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Grunt task for se-runner",
   "repository": {
     "type": "git",
