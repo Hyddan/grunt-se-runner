@@ -168,6 +168,7 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
 
+ * 2017-04-13   v1.2.0   Output total SeRunner execution time.
  * 2017-04-11   v1.1.3   Update SeRunner dependency to 1.2.3.
  * 2017-04-10   v1.1.2   Update SeRunner dependency to 1.2.2 and added link in README to se-runner-browserstack-example.
  * 2017-04-10   v1.1.1   Update SeRunner dependency to 1.2.1.
