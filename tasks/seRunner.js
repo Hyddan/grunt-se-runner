@@ -95,7 +95,8 @@ module.exports = function (grunt) {
 
                 grunt.log.write('\nRan {succeeded} of {total} specs '.replace('{succeeded}', metrics.succeeded).replace('{total}', metrics.total));
                 grunt.log.write('successfully'['green']);
-                grunt.log.writeln(' in {duration} seconds.'.replace('{duration}', metrics.duration));
+                grunt.log.write(' in {duration} seconds.'.replace('{duration}', metrics.duration));
+                grunt.log.writeln(' Total SeRunner execution time: {duration} seconds.'.replace('{duration}', data.duration));
             }
 
             done(data.success);
